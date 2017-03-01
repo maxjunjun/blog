@@ -76,8 +76,10 @@
 
     &-title {
       margin-bottom: 15px;
-      font-size: 14px;
-      font-weight: bold;
+      font: {
+        size: 14px;
+        weight: bold;
+      }
       transition: all .5s;
 
       a {

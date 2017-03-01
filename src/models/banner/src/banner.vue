@@ -15,7 +15,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
   .banner {
     height: 290px;
     width: 100%;
