@@ -38,8 +38,9 @@
       height: 10px;
       left: -27px;
       position: absolute;
-      border: 2px solid #fff;
-      border-radius: 50%;
+      border: 2px solid #fff {
+        radius: 50%;
+      };
       content: "";
       background: #cac1c1;
       -webkit-transition: all 1s;
@@ -52,7 +53,7 @@
       width: 121px;
       height: 29px;
       left: -148px;
-      top: -9px;
+      top:- 9px;
       position: absolute;
       z-index: 0;
       content: "";
@@ -161,8 +162,8 @@
     }
 
     &-date {
-      left: -130px;
-      top: -1px;
+      left: -125px;
+      top: 0px;
       position: absolute;
       z-index: 1;
       color: #F5F5F5;

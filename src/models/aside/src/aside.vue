@@ -1,17 +1,6 @@
 <template>
   <aside>
-    <div class="avatar"><a href="about.html"><span>关于杨青</span></a></div>
-    <div class="topspaceinfo">
-      <h1>执子之手，与子偕老</h1>
-      <p>于千万人之中，我遇见了我所遇见的人..</p>
-    </div>
-    <div class="about_c">
-      <p>网名：DanceSmile | 即步非烟</p>
-      <p>职业：Web前端设计师、网页设计 </p>
-      <p>籍贯：四川省—成都市</p>
-      <p>电话：13662012345</p>
-      <p>邮箱：dancesmiling@qq.com</p>
-    </div>
+    <Resume/>
     <div class="bdsharebuttonbox">
       <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
       <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
@@ -68,8 +57,12 @@
 </template>
 
 <script>
+  import Resume from './resume.vue'
   export default {
     name: 'aside',
+    components: {
+      Resume
+    },
     data () {
       return {
         msg: 'Welcome to Your Vue.js App'
@@ -79,97 +72,7 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-  /* 右侧栏个人档案 */
-  .avatar {
-    margin: 10px auto;
-    width: 160px;
-    height: 160px;
-    border-radius: 100%;
-    overflow: hidden;
-  }
-
-  .avatar a {
-    display: block;
-    padding-top: 100px;
-    width: 160px;
-    background: url(../../../assets/images/photos.jpg) no-repeat;
-    background-size: 160px 160px;
-  }
-
-  .avatar a span {
-    display: block;
-    margin-top: 63px;
-    padding-top: 8px;
-    width: 160px;
-    height: 55px;
-    text-align: center;
-    line-height: 20px;
-    color: #fff;
-    background: rgba(0, 0, 0, .5);
-    -webkit-transition: margin-top .2s ease-in-out;
-    -moz-transition: margin-top .2s ease-in-out;
-    -o-transition: margin-top .2s ease-in-out;
-    transition: margin-top .2s ease-in-out;
-  }
-
-  .avatar a:hover span {
-    display: block;
-    margin-top: 0;
-  }
-
-  .topspaceinfo {
-    background: #e41635;
-    padding: 40px 20px;
-    color: #fff;
-    text-shadow: 1px 1px rgba(0, 0, 0, .3);
-  }
-
-  .topspaceinfo h1 {
-    font-size: 16px;
-    line-height: 40px;
-    font-weight: bold;
-  }
-
-  .about_c {
-    margin: 10px 0;
-    color: #fff;
-    line-height: 26px;
-  }
-
-  .about_c p:first-child, .about_c p:nth-child(2), .about_c p:nth-child(3), .about_c p:nth-child(4), .about_c p:last-child {
-    background: url(../../../assets/images/about_c.png) no-repeat;
-  }
-
-  .about_c p:first-child {
-    background-position: 15px 6px;
-  }
-
-  .about_c p:nth-child(2) {
-    background-position: 15px -20px
-  }
-
-  .about_c p:nth-child(3) {
-    background-position: 15px -48px
-  }
-
-  .about_c p:nth-child(4) {
-    background-position: 15px -70px
-  }
-
-  .about_c p:last-child {
-    background-position: 15px -97px
-  }
-
-  .about_c p {
-    display: block;
-    padding-left: 40px;
-  }
-
-  .about_c p:hover {
-    background: #222
-  }
-
+<style rel="stylesheet/scss" lang="scss">
   .bdsharebuttonbox {
     margin: 20px;
     clear: both;
