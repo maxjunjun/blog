@@ -73,12 +73,13 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style rel="stylesheet/scss" lang="scss">
+
+  /* 百度分享 */
   .bdsharebuttonbox {
     margin: 20px;
     clear: both;
   }
 
-  /* 百度分享 */
   /* 右侧推荐信息列表 */
   .tj_news h2, .links h2 {
     font-size: 16px;
