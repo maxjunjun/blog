@@ -1,6 +1,6 @@
 <template>
   <aside>
-    <Resume/>
+    <Resume />
     <div class="bdsharebuttonbox">
       <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
       <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
@@ -9,47 +9,13 @@
       <a href="#" class="bds_weixin"data-cmd="weixin"title="分享到微信"></a>
       <a href="#" class="bds_more" data-cmd="more"></a>
     </div>
-    <div class="tj_news">
-      <h2>
-        <p class="tj_t1">最新文章</p>
-      </h2>
-      <ul>
-        <li><a href="/">犯错了怎么办？</a></li>
-        <li><a href="/">两只蜗牛艰难又浪漫的一吻</a></li>
-        <li><a href="/">春暖花开-走走停停-发现美</a></li>
-        <li><a href="/">琰智国际-Nativ for Life官方网站</a></li>
-        <li><a href="/">个人博客模板（2014草根寻梦）</a></li>
-        <li><a href="/">简单手工纸玫瑰</a></li>
-        <li><a href="/">响应式个人博客模板（蓝色清新）</a></li>
-        <li><a href="/">蓝色政府（卫生计划生育局）网站</a></li>
-      </ul>
-      <h2>
-        <p class="tj_t2">推荐文章</p>
-      </h2>
-      <ul>
-        <li><a href="/">犯错了怎么办？</a></li>
-        <li><a href="/">两只蜗牛艰难又浪漫的一吻</a></li>
-        <li><a href="/">春暖花开-走走停停-发现美</a></li>
-        <li><a href="/">琰智国际-Nativ for Life官方网站</a></li>
-        <li><a href="/">个人博客模板（2014草根寻梦）</a></li>
-        <li><a href="/">简单手工纸玫瑰</a></li>
-        <li><a href="/">响应式个人博客模板（蓝色清新）</a></li>
-        <li><a href="/">蓝色政府（卫生计划生育局）网站</a></li>
-      </ul>
-    </div>
-    <div class="links">
-      <h2>
-        <p>友情链接</p>
-      </h2>
-      <ul>
-        <li><a href="/">杨青个人博客</a></li>
-        <li><a href="/">3DST技术社区</a></li>
-      </ul>
-    </div>
+    <ArticlesLink/>
+    <!--<ArticlesLink/>-->
+    <FriendLink/>
     <div class="copyright">
       <ul>
-        <p> Design by <a href="/">DanceSmile</a></p>
-        <p>蜀ICP备11002373号-1</p>
+      <!--  <p> Design by <a href="/">DanceSmile</a></p>
+        <p>蜀ICP备11002373号-1</p>-->
         </p>
       </ul>
     </div>
@@ -58,10 +24,15 @@
 
 <script>
   import Resume from './resume.vue'
+  import ArticlesLink from './articlesLink.vue'
+  import FriendLink from './friendLink.vue'
+
   export default {
     name: 'aside',
     components: {
-      Resume
+      Resume,
+      ArticlesLink,
+      FriendLink
     },
     data () {
       return {

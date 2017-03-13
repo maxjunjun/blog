@@ -37,7 +37,7 @@
         width: 160px;
         padding-top: 100px;
         background-size: 160px 160px;
-        background: url(../../../assets/images/photos.jpg) no-repeat;
+        background: url(../../../assets/images/head.jpeg) no-repeat;
 
         span {
           display: block;

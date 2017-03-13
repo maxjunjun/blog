@@ -10,6 +10,10 @@ import {
 } from '../api'
 
 export const getBlogList = ({ commit }) => {
-  const blogs = fetchBlogList()
-  commit(BLOG_LIST, blogs)
+  fetchBlogList().then(function (res) {
+    console.log(res)
+    commit(BLOG_LIST, res.data)
+  }).catch(function (err) {
+    console.log(err)
+  })
 }

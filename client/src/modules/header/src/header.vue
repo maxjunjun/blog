@@ -5,8 +5,10 @@
     <div class="header-logo"><a href="/"></a></div>
     <nav class="header-nav">
       <a href="index.html" class="header-nav-current">首页</a>
-      <a href="about.html">关于我</a><a href="newlist.html">慢生活</a><a href="share.html">模板分享</a>
-      <a href="new.html">模板主题</a>
+      <a href="about.html">关于</a>
+      <a href="newlist.html">归档</a><
+      <a href="share.html">标签</a>
+      <a href="new.html">主题</a>
     </nav>
   </header>
 </template>
@@ -27,7 +29,7 @@
   /* 头部信息 */
   .header {
     position: relative;
-    background: url(../../../assets/images/ibodybg.png) top right no-repeat;
+    //background: url(../../../assets/images/ibodybg.png) top right no-repeat;
 
     h1 {
       padding: 15px 0 0 80px;

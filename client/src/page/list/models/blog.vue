@@ -7,7 +7,7 @@
       <a href="/" target="_blank" class="blog-more">阅读全文&gt;&gt;</a>
     </ul>
     <p class="blog-info">
-      <span>作者：杨青</span>
+      <span>作者：马军</span>
       <span>分类：【<a href="/">{{ data.typeName }}</a>】</span>
       <span>浏览（<a href="/">{{ data.pageView }}</a>）</span>
       <span>评论（<a href="/">{{ data.comment }}</a>）</span>
